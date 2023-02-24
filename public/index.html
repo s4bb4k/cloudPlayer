@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Player</title>
+  <link rel="stylesheet" href="vendors/fontawesome-free-6.3.0-web/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="src/models/Song.js"></script>
+  <script src="src/models/AudioPlayer.js"></script>
+  <script src="src/app.js"></script>
+</head>
+<body onload="start()">
+    <div id="player">
+      <div class="controls">
+        <div class="bar">
+          <div class="currentTime">0:00</div>
+          <div class="progressBar">
+            <div></div>
+          </div>
+          <div class="totalTime">-0:00</div>
+        </div>
+        <div class="info">
+          <div class="songName"></div>
+          <div class="artistName"></div>
+        </div>
+        <div class="btns">
+          <div class="option">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="volume">
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <div class="previous">
+            <i class="fas fa-backward"></i>
+          </div>
+          <div class="play">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="next">
+            <i class="fas fa-forward"></i>
+          </div>
+          <div class="add">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

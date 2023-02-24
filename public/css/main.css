@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #2d2d30;
+    --bg-color-2: #161616DE;
+    --bg-color-bar: #161616;
+    --bg-color-bar-active: #CE001E; 
+    --border-radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: dashed rgba(255,0,0,0.5); */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background: var(--bg-color);
+}
+
+#player {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: var(--border-radius);
+    background: #7f8c8d;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../assets/emarosa.jpg");
+    background-size: cover;
+}
+
+.controls {
+    width: 100%;
+    height: 40%;
+    background-color: var(--bg-color-2);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    display: flex;
+    flex-flow: column;
+    color: white;
+}
+
+.controls div {
+    width: 100%;
+    display: flex;
+}
+
+.bar {
+    flex: 1;
+    padding:  5px 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+}
+
+.currentTime, .totalTime {
+    flex: 1;
+}
+
+.progressBar {
+    flex: 8;
+    height: 5px;
+    margin: 0 5px;
+    background-color: var(--bg-color-bar);
+    cursor: pointer;
+}
+
+.progressBar div {
+    width: 1%;
+    background-color:  var(--bg-color-bar-active);
+    transition: all 0.3s ease;
+}
+
+.info, .btns {
+    flex: 1.5;
+}
+
+.info {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info div {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.info .songName {
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.info .artistName {
+    font-weight: 70%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btns, .btns div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns div i {
+    cursor: pointer;
+}
